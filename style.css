@@ -1,5 +1,5 @@
 /* Paper Element */
-/* Button */ 
+/* Button */
 
 paper-button.classical {
     background: rgb(142, 0, 0);
@@ -29,4 +29,33 @@ paper-button.danger {
 
 paper-button.info {
     background: #004577;
+}
+
+/* Moe board Functional Links Style */
+[id$="Link"] ul {
+    padding: 0 20px;
+}
+
+[id$="Link"] ul li {
+    display: inline-block;
+    list-style: none;
+}
+#topLink {	
+    text-align: right;
+}
+#topLink ul li::before {
+    content: "[";
+}
+
+#topLink ul li::after {
+    content: "]";
+}
+#centerLink ul {
+	margin: 0;
+}
+#centerLink ul li + li::before {
+	content: "\3  |  \3  ";
+}
+h1 {
+    color: #38149C;
 }
